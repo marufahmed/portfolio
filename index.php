@@ -1,3 +1,4 @@
+<?php
 function Redirect($url, $permanent = false)
 {
     if (headers_sent() === false)
@@ -9,3 +10,4 @@ function Redirect($url, $permanent = false)
 }
 
 Redirect('index.html', false);
+?>
