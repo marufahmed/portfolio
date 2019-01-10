@@ -2,7 +2,7 @@
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
-  font-weight: normal;
+  /*font-weight: bold;*/
   font-style: normal; }
 
 /* =======================================================
@@ -34,11 +34,18 @@ a {
 p {
   margin-bottom: 1.5em; }
 
-h1, h2, h3, h5, h6 {
+h1, h2, h5, h6 {
   color: #000;
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
+
+h3 {
+  font-size: 1.5em;
+  color: #000;
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;}
 
 h4 {
   color: #FFFFFF;
