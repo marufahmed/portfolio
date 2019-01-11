@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Work Template</title>
+    <title>Asphalt Quality Control</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -52,7 +52,7 @@
         <nav id="colorlib-main-menu" role="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="colorlib-active"><a href="work.html">Projects</a></li>
+                <li class="colorlib-active"><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -74,82 +74,71 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="col-md-12 animate-box" data-animate-effect="fadeInRight" >
-                        <img src="images/pavementCrack/Vehicle%20Platform.png" width="100%">
-                    </div>
-
-
-                    <div class="w-100" style="padding: 5%;">.</div>
-
                     <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                         <div class="about-desc">
-                            <h3>Pavement Crack Detection</h3>
-                            <p>For this project, the goal was to create an autonomous pavement crack detector. Basically
-                                a semi-autonomous vehicle that can maneuver its way while collecting images of pavement
-                                condition for crack detection. I started off with a 1/16th scale radio controlled vehicle
-                                and embedded a Raspberry Pi to drive the Electronic Speed Controls. I found a very interesting
-                                Open Source Project named 'Donkey Car' which runs on TensorFlow and allows users to train
-                                their own vehicles according to needs. Then I built a track in my lab and started training
-                                the autopilots. For training, I drove it around the track many times with the help of first
-                                person view in Donkey's local web server. It captures images and corresponding parameters
-                                like throttle and orientation. After training, I got a vehicle that can mimic my driving
-                                behavior around my lab circuit. It was definitely very interesting to see it coming to life.</p>
+                            <h3>Asphalt Quality Control </h3>
+                            <p>For this project, the main objective was to identify a portable and inexpensive solution
+                            for checking proper chemical composition of asphalt samples. We inspected the effectiveness
+                            of SCiO Molecular Sensor which allows users to train it to identify correct samples using
+                            spectrogram. The way it works is that users can scan their materials using the sensor and
+                            the smartphone application fetches the data via bluetooth and sends it to cloud server. Users
+                            can also modify pre processing methods to find the best model for each material. We made
+                            12 spectrograph models for different grades of asphalts and developed an android application
+                            using SCiO's provided API. </p>
                         </div>
                     </div>
 
                     <div class="col-md-6 animate-box" data-animate-effect="fadeInRight" >
                         <div class="about-desc">
-                            <img src="images/pavementCrack/neural%20network.png" width="100%">
+                            <img src="images/asphaltQuality/scanning%20workflow.jpg" width="100%">
                         </div>
                     </div>
 
-                    <div class="w-100" style="padding: 5%;">.</div>
+                    <div class="col-md-12" style="padding: 5%;">...</div>
 
-                    <div class="col-md-12 animate-box" data-animate-effect="fadeInRight" >
-                        <h3>Workflow Integration of Project</h3>
-                        <img src="images/pavementCrack/workflow.JPG" width="100%">
+                    <div class="col-md-6 animate-box" data-animate-effect="fadeInRight" >
+                        <div class="about-desc">
+                            <img src="images/asphaltQuality/Presentation%20figure.JPG" width="100%">
+                        </div>
+                    </div>
+                    <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                        <div class="about-desc">
+                            <h3>Challenges Faced</h3>
+                            <p>
+                                SCiO is a device which uses near-IR spectroscopy. Near-IR ranges from 0.75 to 1.5 microns. But sunlight contains light with every wavelength ranging from 0 microns to 2.5 microns with different intensity levels. So, if we need to block complete range if near IR, we need to use electrically conductive material.  Aluminum foil, and other electrically conductive metals such as copper, can reflect and absorb the radio waves and consequently interferes with their transmission. Both radio waves and light waves are electromagnetic waves. And electrically conductive material will block IR. The greater the conductivity, the greater the blocking. Aluminum foil will kill all IR, bot high range and low. Most plastics allow IR to pass through. Glass will bock low frequency IR (red hot), but allow the passage of high frequency (white hot) IR.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="w-100" style="padding: 5%;">.</div>
-
-                    <div class="col-md-12 animate-box" data-animate-effect="fadeInRight" >
-                        <h3>Training</h3>
-                        <img src="images/pavementCrack/loss-localization.PNG" width="100%">
-                    </div>
-
-                    <div class="w-100" style="padding: 5%;">.</div>
+                    <div class="col-md-12" style="padding: 5%;">...</div>
 
                     <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                         <div class="about-desc">
-                            <h3>Training and Results</h3>
-                            <p>The other main part of the project was to identify and report pavement
-                                surface cracks. I knew I had to do the inference part of it on-board.
-                                So on the next 1/10th scale iteration, I added a Nvidia Jetson TX2 on
-                                the vehicle which is equipped with Tegra X2 graphics processor and more
-                                than capable of doing very high speed inference. Then I created a video
-                                stream pipeline to get the high resolution images captured from TX2's
-                                on-board camera. After that, I annotated over 600 images to create training
-                                data for the model. Meanwhile, I was setting up the environments for object
-                                detection in TensorFlow on the R2 High Performance Cluster provided access by
-                                Smart Infrastructure Lab and Boise State University. After training, I am pretty
-                                happy with overall detection accuracy of about 90%. The images in the animation
-                                are actual outputs from the Object Detector model. Currently I am working on creating
-                                a model that can classify different types of cracks on pavement surface. </p>
+                            <h3>Solutions</h3>
+                            <p>
+                                Reflection by metals is caused by the fact that the outer electrons are very loosely bound to any particular atom. They are, effectively, shared by all the surrounding atoms. This accounts for the high electrical and thermal conductivity of metals. When any electromagnetic wave arrives at a metal surface, the conduction electrons are vibrated by the varying fields and re radiate the energy as a reflected wave. In other words, Electromagnetic radiation falling on the foil causes these electrons to move, and that motion produces new electromagnetic radiation which generates new radiation which destructively interferes with the original incoming radiation. For a flat surface, a mirror (coherent) reflection is produced. This works for light, IR and all radio waves.
+                            </p>
                         </div>
                     </div>
 
                     <div class="col-md-6 animate-box" data-animate-effect="fadeInRight" >
                         <div class="about-desc">
-                            <img src="images/pavementCrack/detectedCracks.gif" width="100%">
+                            <img src="images/asphaltQuality/full%20apparatus.jpg" width="100%">
                         </div>
                     </div>
 
+                    <div class="col-md-12" style="padding: 5%;">...</div>
+
+                    <div class="col-md-12 animate-box" data-animate-effect="fadeInRight" >
+                    <h3>
+                       Results: CLA 0-9% ENGINE OIL BASE (58-34)
+                    </h3>
+                        <embed src="images/asphaltQuality/ModelReport.pdf" width="100%" height="1000" />
+                    </div>
 
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>
 
